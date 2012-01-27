@@ -2,6 +2,10 @@ body .slides.template-default article.biglogo {
 	background: white url(../img/avatar-twitter0244x244.png) 50% 50% no-repeat;
 }
 
+body .slides.template-default > article:not(.nobackground):not(.biglogo) {
+background: white url(../img/transblog_logo_btm.gif) 631px 651px no-repeat;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "futura-pt";
 	font-weight: 700;
