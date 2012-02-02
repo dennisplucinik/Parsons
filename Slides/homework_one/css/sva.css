@@ -1,0 +1,210 @@
+/**
+ 
+ All your styles belong here.
+
+*/
+
+@font-face{
+    font-family:'HUGEAvantGardeBold';
+    src:url("huge_agb_v5-webfont.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+    font-family:HUGEAvantGardeBold, 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-weight:700;
+    text-rendering:optimizeLegibility;
+    font-weight: normal;
+    letter-spacing: -.05em;
+    text-shadow: none;
+}
+
+h1 {
+    margin-top:150px;
+}
+
+h1.thin-pink-bottom-border {
+    border-bottom:3px solid #ED228E;
+    padding-bottom:13px;
+    display:inline-block;
+}
+
+h1.v-center {
+    margin-top:210px;
+}
+
+h1.v-bottom {
+    position:absolute;
+    bottom:100px;
+    left:0;
+    padding:0 60px;
+}
+
+.hidden {
+    display:none;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.strike {
+    text-decoration:line-through;
+}
+
+.margin-top-none {
+    margin-top:0;
+}
+
+.margin-top-medium {
+    margin-top:20px;
+}
+
+.t-center {
+    text-align:center;
+}
+
+.t-center h1 {
+    padding-right:0;
+}
+
+.hidden {
+    display:none;
+}
+
+.bigger {
+    font-size:300%;
+    line-height:100%;
+}
+
+.invert, .invert h1, .invert h2, .invert h3, .invert h4, .invert h5, .invert code {
+    color:#fefefe;
+}
+
+.magenta, .slide .magenta {
+    color:#ED228E;
+}
+
+.red, .slide .red {
+    color:#d00;
+}
+
+.blue, .slide .blue {
+    color:#00beee;
+}
+
+.yellow, .slide .yellow {
+    color:#ffff00;
+}
+
+.black, .slide .black {
+    color:#000;
+}
+
+.green, .slide .green {
+    color:#9ed573;
+}
+
+.orange, .slide .orange {
+    color:#ff9e00;
+}
+
+.blue, .slide .blue {
+    color:#0e51a7;
+}
+
+.slides.template-sva > .slide {
+    border-radius:0px;
+    border:18px solid #fff;
+}
+
+.slides.template-sva > .slide ul {
+    margin-top:30px;
+}
+
+.slides.template-sva > .slide.no-border {
+    border:0 none;
+}
+
+.slides.template-sva > .slide.invert {
+    color:#fefefe;
+}
+
+.slides.template-sva > .slide.invert a {
+    color:#fff;
+}
+
+.slides.template-sva > .slide.green {
+    background-color:green;
+}
+
+.slides.template-sva > .slide.blue {
+    background-color:#0e51a7;
+}
+
+.slides.template-sva > .slide.red {
+    background-color:#d00;
+}
+
+.slides.template-sva > .slide.light-green {
+    background-color:#9ed573;
+}
+
+.slides.template-sva > .slide.magenta {
+    background-color:#ED228E;
+}
+
+.slides.template-sva > .slide.black {
+    background-color:#000;
+}
+
+.slides.template-sva > .slide.orange {
+    background-color:#ff9e00;
+}
+
+.floating-list {
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+    text-align:center;
+    display:block;
+}
+
+.floating-list li {
+    display:inline;
+}
+
+.floating-list li:before {
+    content:none;
+}
+
+.slide.fill img {
+    border-radius:0;
+}
+
+.slide .theme {
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    padding-right: 175px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+code {
+    font-size:65%;
+    background:rgba(200,200,200,0.3);
+    padding:2px 8px;
+    border-radius:10px;
+    display:inline-block;
+}
+
+.small {
+    font-size:60%;
+}
+
+.half {
+    width:50%;
+}
