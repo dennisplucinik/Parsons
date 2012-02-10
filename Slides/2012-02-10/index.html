@@ -48,7 +48,7 @@
 
       <article>
         <h1>
-          Intro to HTML
+          Intro to HTML.
         </h1>
         <p>
         	Reading recap
@@ -69,7 +69,7 @@
         <h3>
           Reading Recap (yes they are old articles)
         </h3>
-				<ul>
+				<ol>
 					<li>
 						<em>
 							Understanding Web Design - Jeffrey Zeldman
@@ -114,7 +114,7 @@
 							Re: staying employed: "Learning to work with emerging technologies is probably a much better plan." - Zeldman
 						</p>
 					</li>
-				</ul>
+				</ol>
       </article>
 
       <article style="background: url(zeldman.jpg) no-repeat">
@@ -124,20 +124,60 @@
         <h3>
           Web Standards & Semantics
         </h3>
-				<ul>
+				<ol class="build">
 					<li>
 						Standards bring us together.
 					</li>
 					<li>
 						&lt;header&gt; has more meaning than &lt;div&gt;
+						<br />
+						<br />
+						...however...
+						<br />
+						&lt;b&gt;, &lt;i&gt;, &amp; &lt;u&gt; have no meaning.
+						<br />
+						<br />
+						Which is why tags liks &lt;center&gt;, &lt;blink&gt;, &lt;marquee&gt;, & &lt;font&gt; are deprecated.  
 					</li>
 					<li>
 						I promise I will never mention table-based layouts again.
 					</li>
-				</ul>
+				</ol>
       </article>
 
       <article style="background: url(table.jpg) no-repeat">
+      	<div class="build">
+      		<div style="background: yellow;position: absolute;top: 25px;left: 19px;opacity: .3;width: 861px;height: 656px;">
+						<!-- table -->
+					</div>
+      		<div style="background: orange;position: absolute;height: 102px;width: 863px;top: 25px;left: 17px;opacity: .3;">
+						<!-- row -->
+					</div>
+					<div style="position: absolute;opacity: .3;height: 52px;width: 860px;top: 130px;left: 18px;background: orange;">
+						<!-- row -->
+					</div>
+					<div style="position: absolute;opacity: .3;height: 495px;width: 860px;top: 184px;left: 18px;background: orange;">
+						<!-- row -->
+					</div>
+					<div style="background: blue;position: absolute;top: 23px;left: 17px;height: 103px;width: 286px;opacity: .3;">
+						<!-- column -->
+					</div>
+					<div style="background: blue;position: absolute;top: 23px;left: 304px;height: 103px;width: 576px;opacity: .3;">
+						<!-- column -->
+					</div>
+					<div style="background: black;opacity: .9;position: absolute;top: 0;left: 0;width: 100%;height: 100%;text-align: center;color: white;font-size: 50px;font-weight: bold;">
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						Please don't ever do this.
+					</div>
+      	</div>
       </article>
 
       <article>
@@ -148,11 +188,12 @@
 					style { display: block; display: inline; }
 					<br />
 					<br />
-					&lt;p&gt;, &lt;div&gt;, &lt;h1&gt;, &lt;br&gt;
+					&lt;p&gt;, &lt;div&gt;, &lt;h1&gt;, &lt;br&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;table&gt;, &lt;blockquote&gt;, &lt;pre&gt;, &lt;form&gt;, &lt;button&gt;,
+					&lt;frameset&gt;, &lt;html&gt;, &lt;head&gt;, &lt;object&gt;, &lt;fieldset&gt;
 					<br />
 					vs.
 					<br />
-					&lt;span&gt;, &lt;em&gt;
+					&lt;span&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;img&gt;, &lt;input&gt;, &lt;abbr&gt;, &lt;acronym&gt; 
 					<br />
 					<br />
 					<span style="font-weight: bold">Block</span> elements take up the full page width and start on a new line.
@@ -223,7 +264,7 @@
 
       <article style="background:url(cheatslide.gif)">
         <h3>
-        	HTML Cheat Sheet (<a href="cheatsheet.jpg">full sized image</a>)
+        	HTML Cheat Sheet (<a href="cheatsheet.png">full sized image</a>)
         </h3>
       </article>
 
@@ -243,7 +284,7 @@
 						It must validate using the <a href="http://validator.w3.org/" alt="W3C validator">W3C Validator</a>.
 					</li>
 					<li>
-						It must use all the tags listed in the <a href="cheatsheet.jpg">cheat sheet</a>.
+						It must use all the tags listed in the <a href="cheatsheet.png">cheat sheet</a>.
 					</li>
 					<li>
 						It must not use any deprecated tags.
