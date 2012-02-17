@@ -51,7 +51,7 @@
           Intro to CSS.
         </h1>
         <p>
-        	Reading recap
+        	Reading Re-cap
 					<br>
 					Introduce Project 1
 					<br>
@@ -67,7 +67,7 @@
 
       <article>
         <h3>
-          Reading Recap
+          Reading Re-cap
         </h3>
 				<img src="allsoppbook.jpg" alt="John Allsopp" style="float: right;margin: 0 0 10px 10px;width: 240px;box-shadow: 0 8px 28px #333;" />
 				<ol>
@@ -115,7 +115,7 @@
 							</strong>
 							<br>
 							<span style="font-size: 15px; display: block; line-height: 25px;">
-								THIS MESSAGE HAS NOT CHANGED: "Please for the love of god upgrade your browser." -me
+								Just be thankful that you'll never have to feel pain like what he describes in this article.
 							</span>
 						</p>
 					</li>
@@ -237,6 +237,9 @@
 							<li>
 								Absolutely positioned elements are removed from the normal document flow.
 							</li>
+							<li>
+								Relatively positioned elements are placed relative to their natural position in the document flow.
+							</li>
 						</ul>
 					</li>
 					<li>
@@ -261,21 +264,36 @@
         </h3>
 				<ul>
 					<li>
-						Calculating element widths and workarounds
+						IE conditional comments
 					</li>
 					<li>
-						z-indexes
+						Hacks (!ie7, *property, >body, !important!, body:empty, ... please stop!)<br>
+						<a href="http://centricle.com/archive/ref-css-filters.html">Will the browser apply the rule(s)?</a>
 					</li>
 					<li>
-						IE conditional comments 
+						Vendor specific styles
+					</li>
+					<li>
+						Padding & the box model
+					</li>
+					<li>
+						Z-indexes
+					</li>
+					<li>
+						Overflows
+					</li>
+					<li>
+						Specs not fully supported vs. odd behavior
 					</li>
 				</ul>
       </article>
 
-      <article style="background: url(browserquirks.gif) no-repeat">
+      <article style="background: url(browserquirks.gif) no-repeat" class="build">
+      	<img src="eyes.gif" alt="eyes of disapproval" style="position: absolute;bottom: 170px;" />
       </article>
 
       <article style="background: url(padding_workaround.gif) no-repeat">
+      	<div style="position: absolute;bottom: 180px;text-align: center;font-size: .6em;left: 210px;">Cons: non-semantic markup. Better to use conditional comments.</div>
       </article>
 
       <article style="background: url(conditional_comments.gif) no-repeat">
