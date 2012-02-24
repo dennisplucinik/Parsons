@@ -24,7 +24,7 @@ html, body {
 		50% 50%, 1000, 
 		from(rgba(245,245,245,1.0)), 
 		to(rgba(100,100,100,1.0))
-	), url(../img/transblog_logo_btm.gif);
+	);
 
 	background-image: -moz-radial-gradient(
 		50% 50% 90deg,
