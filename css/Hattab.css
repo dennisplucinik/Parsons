@@ -6,6 +6,10 @@ body .slides.template-default section.biglogo {
 	background: #fff url(../img/avatar-twitter0244x244.png) 50% 50% no-repeat;
 }
 
+body .slides.template-default section.smalllogo {
+	background: transparent url(../img/small-logo.jpg) 50% 50% no-repeat;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "futura-pt";
 	font-weight: 700;
