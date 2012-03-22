@@ -3,7 +3,7 @@
 <!--
   Google HTML5 slide template
 
-  Authors: Luke Mahé (code)
+  Authors: Luke MahÃ© (code)
            Marcin Wichary (code and design)
            
            Dominic Mazzoni (browser compatibility)
@@ -15,356 +15,742 @@
 <html>
   <head>
     <title>Presentation</title>
-
     <meta charset='utf-8'>
-    <script
-      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--<script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>-->
+		<script src='../../js/slideshow.js'></script>
+		<link rel="stylesheet" href="../../css/Hattab.css" />
+		<link rel="stylesheet" href="main.css" />
+		
+		<script type="text/javascript" src="http://use.typekit.com/uwy0krm.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  
-  <style>
-    /* Your individual styles here, or just use inline styles if that’s
-       what you want. */
-    
-    
-  </style>
+	<body onload="init()">
+		<div id="main" class='slides layout-regular template-default'>
+			<section class='current smalllogo' style="background-position: top center">
+				<p class="center" style="position:relative; top: 400px;font-size: 70%;">Use the <span class="key">&uarr;</span>, <span class="key">&rarr;</span>, <span class="key">&darr;</span>, <span class="key">&larr;</span> keys.</p>
+			</section>
+			
+			<section class="future">
+				<h1>
+					Intro to HTML5
+				</h1>
+				<p class="center">
+					What is it? Mobile Apps, Rich Media, &amp; more
+				</p>
+			</section>
 
-  <body style='display: none'>
+			<section class="future">
+				<section>
+					<h3>
+						Reading Recap
+					</h3>
+					<p>
+						<em style="font-size: 29px;line-height: 1.3em;">
+							"Five Things You Should Know About HTML5" - Mark Pilgrim
+						</em>
+						<br>
+						<br>
+						<strong>
+							Main points:
+						</strong>
+						<br>
+						<span style="font-size: 15px; display: block; line-height: 25px;">
+							<ol>
+								<li>Can't detect "HTML5 support".</li>
+								<li>An improvement on existing HTML4 tags (e.g., sliders, date-pickers, progress bars)</li>
+								<li>It's already here and ready to be used.</li>
+							</ol>
 
-    <section class='slides layout-regular template-default'>
-      
-      <!-- Your slides (<article>s) go here. Delete or comment out the
-           slides below. -->
-        
-        
-      
-      <article class='biglogo'>
-      </article>
+						</span>
+					</p>
+					<p style="margin-top: 40px;clear: both;float: left;text-align: center;width: 100%;">
+						<a href="http://diveintohtml5.info/introduction.html">
+							http://diveintohtml5.info/introduction.html
+						</a>
+					</p>
+				</section>
+				
+				<section>
+					<h3>
+						Reading Recap
+					</h3>
+					<p>
+						<em style="font-size: 29px;line-height: 1.3em;">
+							"What is HTML5?" - Me
+						</em>
+						<br>
+						<br>
+						<strong>
+							Main points:
+						</strong>
+						<br>
+						<span style="font-size: 15px; display: block; line-height: 25px;">
+							<ul>
+								<li>Multiple technologies under one umbrella (HTML, CSS, &amp; JavaScript)</li>
+								<li>Role switching (e.g., rounded corners, transitions, canvas)</li>
+								<li>Paving the cow-paths</li>
+							</ul>
+						</span>
+					</p>
+					<p style="margin-top: 40px;clear: both;float: left;text-align: center;width: 100%;">
+						<a href="http://www.dennisplucinik.com/blog/2012/01/27/what-is-html5/">
+							http://www.dennisplucinik.com/blog/2012/01/27/what-is-html5/
+						</a>
+					</p>
+				</section>
+			</section>
+			
+			<section>
+				<section>
+					<style>
+						img.icon {
+							height: auto;
+							width: auto;
+							background: transparent;
+							-webkit-box-shadow: 0 0 0;
+							border: 0;
+							position: relative;
+							top: 23px;
+							margin: 0;
+							opacity: 1;
+							-webkit-transition: all .4s;
+						}
 
-      <article>
-        <h1>
-          Title Goes Here Up
-          <br>
-          To Two Lines
-        </h1>
-        <p>
-          Sergey Brin
-          <br>
-          May 10, 2011
-        </p>
-      </article>
-      
-      <article>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath.
-        </p>
-      </article>
+						img.icon:hover {
+							opacity: .5;
+						}
 
-      <article>
-        <h3>
-          Simple slide with header and text
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
+						.video-js {
+							width: 710px;
+							height: 410px;
+							margin: 0 auto;
+							background: transparent !important;
+						}
 
-      <article class='smaller'>
-        <h3>
-          Simple slide with header and text (small font)
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
+						.video-js img {
+							border: 0px;
+							-webkit-box-shadow: 0px 0px 0px;
+							display: none;
+						}
 
-      <article>
-        <h3>
-          Slide with bullet points and a longer title, just because we
-          can make it longer
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          </li>
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          </li>
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          </li>
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-          </li>
-        </ul>
-      </article>
+						.video-js video {
+							z-index: 3;
+						}
 
-      <article>
-        <h3>
-          Slide with bullet points that builds
-        </h3>
-        <ul class="build">
-          <li>
-            This is an example of a list
-          </li>
-          <li>
-            The list items fade in
-          </li>
-          <li>
-            Last one!
-          </li>
-        </ul>
+						#graph canvas {
+							height: 480px;
+							width: 800px;
+						}
 
-        <div class="build">
-          <p>Any element with child nodes can build.</p>
-          <p>It doesn't have to be a list.</p>
-        </div>
-      </article>
+						#output {
+							border: solid 5px #666;
+							margin: 0 auto;
+							width: 640px;
+							display: block;
+						}
+					</style>
+					<header>
+						<h3>
+							What is HTML5?
+						</h3>
+						<h5 style="text-align: center">
+							Basically, a bunch of cool new tags and features
+						</h5>
+					</header>
+					<ul style="width: 50%;list-style: none;margin: -10px 0 0 0;padding: 0;float: right;font-size: .8em;">
+						<li>
+							<img src="icons-offline.png" alt="Offline and Storage" class="icon" />
+							Offline &amp; Storage
+						</li>
+						<li>
+							<img src="icons-device-access.png" alt="Device Access" class="icon" />
+							Device Access
+						</li>
+						<li>
+							<img src="icons-connectivity.png" alt="Connectivity / Realtime" class="icon" />
+							Connectivity / Realtime
+						</li>
+						<li>
+							<img src="icons-performance.png" alt="Performance and Integration" class="icon" />
+							Performance &amp; Integration
+						</li>
+					</ul>
+					<ul style="width: 50%;list-style: none;margin: -10px 0 0 0;padding: 0;float: right;font-size: .8em;">
+						<li>
+							<img src="icons-multimedia.png" alt="Offline and Storage" class="icon" />
+							Multimedia
+						</li>
+						<li>
+							<img src="icons-semantics.png" alt="Offline and Storage" class="icon" />
+							Semantics
+						</li>
+						<li>
+							<img src="icons-3d.png" alt="Offline and Storage" class="icon" />
+							Graphics, 3D &amp; Effects
+						</li>
+						<li>
+							<img src="icons-css3.png" alt="Offline and Storage" class="icon" />
+							CSS3 / Styling
+						</li>
+					</ul>
+					<footer style="text-align: center;font-size: .5em;margin-top: 50px;position: relative;clear: both;float: left;width: 100%;">
+						Source:<a href="http://http://www.html5rocks.com">www.html5rocks.com</a>
+					</footer>
+				</section>
 
-      <article class='smaller'>
-        <h3>
-          Slide with bullet points (small font)
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-        </ul>
-      </article>
+				<section>
+					<h3>
+						Multimedia
+					</h3>
+					<div style="text-align: center;">
+						<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" poster="my_video_poster.png" data-setup="{}" width="700" height="394">
+							<source src="../../videos/big_buck_bunny.mp4" type='video/mp4'>
+							<source src="../../videos/big_buck_bunny.webm" type='video/webm'>
+						</video>
+					</div>
+					<p>
+					</p>
+				</section>
 
-      <article>
-        <h3>
-          Slide with a table
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          Slide with a table (smaller text)
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article>
-        <h3>
-          Styles
-        </h3>
-        <ul>
-          <li>
-            <span class='red'>class="red"</span>
-          <li>
-            <span class='blue'>class="blue"</span>
-          <li>
-            <span class='green'>class="green"</span>
-          <li>
-            <span class='yellow'>class="yellow"</span>
-          <li>
-            <span class='black'>class="black"</span>
-          <li>
-            <span class='white'>class="white"</span>
-          <li>
-            <b>bold</b> and <i>italic</i>
-        </ul>
-      </article>
-      
-      <article>
-        <h2>
-          Segue slide
-        </h2>
-      </article>
+				<section>
+					<h3>
+						Semantics
+					</h3>
+					<p>
+						<img src="semantics.png" alt="semantics" class="icon" style="width: 100%" />
+					</p>
+				</section>
 
-      <article>
-        <h3>
-          Slide with an image
-        </h3>
-        <p>
-          <img style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Sergey Brin
-        </div>
-      </article>
+				<section>
+					<h3>
+						Graphics, 3D &amp; Effects
+					</h3>
+					<div style="display:none">
+						<video id="sourcevid" autoplay="true" loop="true">
+							<source src="../../videos/BigBuckBunny_640x360.mp4" type="video/mp4">
+							<source src="../../videos/BigBuckBunny_640x360.ogv" type="video/ogg">
+						</video>
+						<canvas id="sourcecopy" width="640" height="360"></canvas>
+					</div>
+					<canvas id="output" width="640" height="360" onmousedown="dropBomb(event, this)" style="border: solid 5px #666666"></canvas>
+				</section>
 
-      <article>
-        <h3>
-          Slide with an image (centered)
-        </h3>
-        <p>
-          <img class='centered' style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Larry Page
-        </div>
-      </article>
+				<section>
+					<h3>
+						Graphics, 3D &amp; Effects
+					</h3>
+					<div id="graph">
+					</div>
+				</section>
 
-      <article class='fill'>
-        <h3>
-          Image filling the slide (with optional header)
-        </h3>
-        <p>
-          <img src='images/example-cat.jpg'>
-        </p>
-        <div class='source white'>
-          Source: Eric Schmidt
-        </div>
-      </article>
+				<section onclick="">
+					<h3>
+						CSS3 / Styling
+					</h3>
 
-      <article>
-        <h3>
-          This slide has some code
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h3>
+						Offline &amp; Storage
+					</h3>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h3>
+						Device Access
+					</h3>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h3>
+						Connectivity / Realtime
+					</h3>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h3>
+						Performance &amp; Integration
+					</h3>
+					<p>
+					</p>
+				</section>
+			</section>
+			
+			<section>
+				<section>
+					<h3>
+						How is it different?
+					</h3>
+					<ul>
+						<li>well...
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Data Types - Strings
+					</h3>
+					<ul>
+						<li>
+							A "string" of characters
+						</li>
+						<li>
+							Surrounded by single or double quotes
+						</li>
+						<li>
+							Internal quotes of the same type need to be escaped
+						</li>
+						<li>
+							<pre>
+var myString = 'Pretty cool string isn\'t it?';
+
+// versus...
+
+var myString = "Pretty cool string isn't it?";
 </pre>
-        </section>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          This slide has some code (small font)
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
+						</li>
+						<li>
+							Further reading: <a href="http://www.quirksmode.org/js/strings.html">PPK on Strings</a>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Data Types - Objects
+					</h3>
+					<ul>
+						<li>
+							Associative arrays (names + values)
+						</li>
+						<li>
+							Uses curly braces
+						</li>
+						<li>
+							<pre>
+var myShinyNewObject = {
+  color: 'red',
+  price: 199.99,
+  availability: ['US', 'Japan', 'Australia']
+}
 </pre>
-        </section>
-      </article>
-      
-      <article>
-        <q>
-          The best way to predict the future is to invent it.
-        </q>
-        <div class='author'>
-          Alan Kay
-        </div>
-      </article>
-      
-      <article class='smaller'>
-        <q>
-          A distributed system is one in which the failure of a computer 
-          you didn’t even know existed can render your own computer unusable.
-        </q>
-        <div class='author'>
-          Leslie Lamport
-        </div>
-      </article>
-      
-      <article class='nobackground'>
-        <h3>
-          A slide with an embed + title
-        </h3>
-        
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
+						</li>
+						<li>
+							Values accessed by "[]" or "." notation
+						</li>
+						<li>
+							<pre>
+myShinyNewObject.color; // 'red'
+myShinyNewObject[price]; // 199.99
+</pre>
+						</li>
+						<li>
+							Further reading: <a href="http://www.quirksmode.org/js/associative.html">PPK on Objects</a>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Data Types - Arrays
+					</h3>
+					<ul>
+						<li>
+							Indexed array (no names, just values)
+						</li>
+						<li>
+							Uses square brackets
+						</li>
+						<li>
+							<pre>
+var myArray = ['omg', 'this', 'array', 'is', 'sweet'];
+</pre>
+						</li>
+<li>
+							Values can be anything
+						</li>
+						<li>
+							<pre>
+var one = 1;
+var myArray = [
+  one,
+  function () {alert('hey');},
+  ['another', 'array'],
+  'or maybe an object',
+  {awesome: true}
+];
+</pre>
+						</li>
+					</ul>
+				</section>
+				</section>
+				
+				<section>
+				<section>
+					<h3>
+						Variables
+					</h3>
+					<ul>
+						<li>
+							Variables store values
+						</li>
+						<li>
+							<pre>
+var name = "Dennis";
+</pre>
+						</li>
+						<li>
+							The default value of a variable with no value is "undefined"
+						</li>
+						<li>
+							<pre>
+var name;
+</pre>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Functions
+					</h3>
+					<ul>
+						<li>
+							Stores sets of instructions
+						</li>
+						<li>
+							<pre>function sayHello() {
+  var name = "Dennis";
+  alert('hello ' + name);
+}</pre>
+						</li>
+						<li>
+							Can be assigned to variables
+						</li>
+						<li>
+							<pre>
+var sayHi = sayHello;
+sayHi(); // 'hello Dennis'
+</pre>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Conditionals
+					</h3>
+					<ul>
+						<li>
+							if / elseif / else
+						</li>
+						<li>
+							<pre>
+if (thisThing === someValue) {
+  doSomething();
+} elseif (thisThing === someOtherValue) {
+  soSomethingElse();
+} else {
+  doDefaultThing();
+}
+</pre>
+						</li>
+					</ul>
+				</section>
 
-      <article class='nobackground'>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
+				<section>
+					<h3>
+						Conditionals
+					</h3>
+					<ul>
+						<li>
+							Switches - Used for handling conditionals with many possible values
+						</li>
+						<li>
+							<pre>
+switch (checkOutThisValue) {
+  case '1': 
+    doTheFirstThing();
+   break;
+  case '2':
+    doTheSecondThing();
+    break;
+  case '4':
+    doTheSecondThing();
+    break;
+  case '...':
+    doThe...Thing();
+    break;
+  default: 
+    doDefaultThing();
+    break;
+}
+</pre>
+						</li>
+					</ul>
+				</section>
 
-      <article class='fill'>
-        <h3>
-          Full-slide embed with (optional) slide title on top
-        </h3>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
-      
-      <article>
-        <h3>
-          Thank you!
-        </h3>
-        
-        <ul>
-          <li>
-            <a href='http://www.google.com'>google.com</a>
-        </ul>
-      </article>
+				<section>
+					<h3>
+						Comparison & Logic
+					</h3>
+					<ul>
+						<li>
+							==, ===, !=, >, <, >=, <=
+						</li>
+						<li>
+							example:
+						</li>
+						<li>
+							<pre>
+if (age < 18) document.write("Too young");
+</pre>
+						</li>
+						<li>
+							== vs. ===
+						</li>
+						<li>
+							== is a value check (equality)
+						</li>
+						<li>
+							=== is a value AND type check (strict equal)
+						</li>
+						<li>
+							ALWAYS use ===
+						</li>
+						<li>
+							Also: ||, && (or, and comparisons)
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Loops
+					</h3>
+					<ul>
+						<li>
+							for
+						</li>
+						<li>
+							<pre>
+for (var i = 0; i < 100; i++) {
+  doSomethingWith(i);
+}
+</pre>
+						</li>
+						<li>
+							for in
+						</li>
+						<li>
+							<pre>
+var person = {name: 'Dennis'};
+for (x in person) {
+  alert('person\'s name: ' + person[x]);
+	// same as calling person[name] or person.name
+}
+</pre>
+						<li>
+							while - may not ever run once if condition is initially false
+						</li>
+						<li>
+							<pre>
+while (i <= 5) {
+  doSomethingWith(i);
+}
+</pre>
+						</li>
+						<li>
+							each
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Document Object Model (DOM)
+					</h3>
+					<ul>
+						<li>
+							"An application programming interface (API) for HTML" - W3C
+						</li>
+						<li>
+							It's basically the object version you get after the browser has parsed your HTML file.
+						</li>
+						<li>
+							It can be accessed by JavaScript in a bunch of ways
+						</li>
+						<li>
+							<pre>
+&lt;h1 id="myHeader"&gt;Hello Class&lt;/h1&gt;
+document.getElementById('myHeader');
+</pre>
+						</li>
+						<li>
+							Source: <a href="http://www.w3.org/TR/DOM-Level-2-Core/introduction.html">http://www.w3.org/TR/DOM-Level-2-Core/introduction.html</a>
+						</li>
+					</ul>
+				</section>
+				
+				<section class="center">
+					<img src="dom.jpg" alt="document object model" />
+				</section>
+				
+				<section>
+					<h3>
+						Browser Support
+					</h3>
+					<ul>
+						<li>
+							Browsers do not all implement the same methods the same way (i.e., it's crappy)
+						</li>
+						<li>
+							and it's unfortunately complicated...
+						</li>
+						<li>
+							Examples include: Ajax (XHR) implementation, the event model (bubbling & capture), a myriad of various events (e.g., mouseenter, mouseleave)
+						</li>
+						<li>
+							<a href="http://www.quirksmode.org/dom/events/index.html">PPK: Event compatibility tables</a>
+						</li>
+						<li>
+							Fortunately we have a little help from our friends at Mozilla...
+						</li>
+					</ul>
+				</section>
+			</section>
+			
+			<section>
+				<section>
+					<p class="center">
+						<img src="500px-JQuery_logo.svg.png" alt="jQuery" style="border: 0;-webkit-box-shadow: 0 0 0;box-shadow: 0 !important;background: transparent;" />
+					</p>
+				</section>
+				<section>
+					<h3>
+						Selectors
+					</h3>
+					<ul>
+						<li>
+							Wrapped Sets
+						</li>
+						<li>
+<pre>
+$('div'); // Gets all div elements
+</pre>
+						</li>
+						<li>
+							CSS3 Selector Engine (a.k.a. Sizzle)
+						</li>
+						<li>
+<pre>
+$('div:nth-child(n)'); // Gets every nth div element
+</pre>
+						</li>
+						<li>
+							More on CSS3 selectors: <a href="http://www.w3.org/TR/selectors/">http://www.w3.org/TR/selectors/</a>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Convenience Methods
+					</h3>
+					<ul>
+						<li>
+							$.hide() / $.show()
+						</li>
+						<li>
+							$.fadeIn() / $.fadeOut()
+						</li>
+						<li>
+							<pre>
+window.onload = function () {
+  alert('page is loaded');
+}
 
-    </section>
+// boils down to this...
 
-  </body>
+$(function () {
+  alert('DOM is loaded');
+});
+</pre>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Chaining
+					</h3>
+					<ul>
+						<pre>
+$('#h1')
+  .animate({'top': '10px'])
+  .fadeOut()
+  .remove();
+</pre>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Download it
+					</h3>
+					<ul>
+						<li>
+							<a href="http://jquery.com/">http://jquery.com/</a>
+						</li>
+						<li>
+							or
+						</li>
+						<li>
+							include it on your site from a CDN
+						</li>
+						<li>
+							<pre>
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&lt;
+</pre>
+						</li>
+					</ul>
+				</section>
+			</section>
+			
+				<section>
+					<h2>
+						Questions
+					</h2>
+					<h1>?</h1>
+				</section>
+				
+				<section>
+					<h3>
+						Assignment
+					</h3>
+					<p class="center">
+						Prepare for next week's presentation
+					</p>
+				</section>
+				
+			</section>
+		</div>
+
+		<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+		<script src="http://vjs.zencdn.net/c/video.js"></script>
+		<script src="canvas.js"></script>
+		<script src="three.js"></script>
+		<script src="raf.js"></script>
+		<script src="graph.js"></script>
+	</body>
 </html>
