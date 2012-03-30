@@ -183,8 +183,69 @@
 					<p style="text-align: center">Source: <a href="http://www.w3schools.com/css/css_float.asp">www.w3schools.com</a></p>
 				</section>
 
+				<script>
+					$(function () {
+						$('#floatExample').click(function(){
+							if ($(this).css('float') === 'left') {
+								$(this).css('float', 'right');
+							} else {
+								$(this).css('float', 'left');
+							}
+						});
+					});
+				</script>
+				<section>
+					<p>
+						<span style="border: 1px solid red;background:#fcc;height:200px;width:200px;float:left;display: block;margin: 20px;" id="floatExample"></span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor pretium dapibus. Vivamus ante purus, malesuada a semper eget, vulputate at lectus. Integer sit amet ante in nibh laoreet euismod non consectetur libero. Nullam hendrerit volutpat ullamcorper. Nulla eget diam ac felis blandit tincidunt. In consequat turpis id nunc egestas consequat. Pellentesque id facilisis ipsum. Aliquam erat volutpat. Duis eu ante libero. Donec at elit congue dui vulputate aliquet. Donec est urna, blandit quis egestas vel, placerat nec tellus. Sed imperdiet cursus massa, dictum cursus elit volutpat non.
+					</p>
+				</section>
+
 				<section>
 					<img src="photo 1.jpg" alt="CSS floats" style="width: auto" />
+				</section>
+
+				<script>
+					$(function () {
+						$('.floatExample2').click(function(){
+							if ($(this).css('float') === 'left') {
+								$(this).css('float', 'none');
+							} else {
+								$(this).css('float', 'left');
+							}
+						});
+					});
+				</script>
+				<style>
+					.floatExample2 {
+						margin: 10px;
+					}
+
+					.one {
+						background: #cfc;
+						border: 1px solid #0f0;
+					}
+
+					.two {
+						background: #ccf;
+						border: 1px solid #00f;
+					}
+
+					.three {
+						background: #fcc;
+						border: 1px solid #f00;
+					}
+
+					.four {
+						background: #0cd;
+						border: 1px solid #ccd;
+					}
+				</style>
+				<section>
+					<div class="floatExample2 one">unfloated</div>
+					<div class="floatExample2 two">unfloated</div>
+					<div class="floatExample2 three">unfloated</div>
+					<div class="floatExample2 four">unfloated</div>
 				</section>
 
 				<section>
@@ -193,6 +254,40 @@
 					</h3>
 					<p style="text-align: center">"The clear property specifies which sides of an element other floating elements are not allowed."<br />- <a href="http://www.w3schools.com/css/css_float.asp">w3schools</a></p>
 					<p style="text-align: center"><img src="photo 2.jpg" alt="CSS clearing" style="width: 480px;" />
+				</section>
+
+				<script>
+					$(function () {
+						$('.clearExample').click(function(){
+							if (!$(this).hasClass('float')) {
+								$(this).addClass('float');
+							} else if (!$(this).hasClass('clear')) {
+								$(this).addClass('clear');
+							} else {
+								$(this).removeClass('float');
+								$(this).removeClass('clear');
+							}
+						});
+					});
+				</script>
+				<style>
+					.clearExample {
+						margin: 10px;
+					}
+
+					.clearExample.float {
+						float: left;
+					}
+
+					.clearExample.clear {
+						clear: both;
+					}
+				</style>
+				<section>
+					<div class="clearExample one">unfloated</div>
+					<div class="clearExample two">unfloated</div>
+					<div class="clearExample three">unfloated</div>
+					<div class="clearExample four">unfloated</div>
 				</section>
 
 				<section>
@@ -221,8 +316,12 @@
 						Assignment
 					</h3>
 					<p class="center">
-						Prepare for next week's presentation
+						Continue applying HTML, CSS, JavaScript to your designs.
 					</p>
+					<ol>
+						<li>Create a new folder in your webspace titled "20120330"</li>
+						<li>Copy the contents from your previous assignment's folder into here and continue working on your new designs from here.</li>
+					</ol>
 				</section>
 				
 			</section>
