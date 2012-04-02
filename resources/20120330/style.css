@@ -1,0 +1,211 @@
+/* for image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+body {
+background: #ccc;
+}
+
+li {
+float: left;
+}
+
+.body {
+background: black;
+position: relative;
+width: 800px;
+margin: 0 auto;
+height: 400px;
+}
+
+.header {
+position: relative;
+width: 800px;
+margin: 0 auto;
+background: white;
+height: 130px;
+}
+
+.logo {
+top: 5px;
+left: 20px;
+position: absolute;
+padding: 20px;
+font-family: times;
+text-transform: capitalize;
+font-size: 1.6em;
+}
+
+.nav {
+position: absolute;
+bottom: 0;
+width: 100%;
+background: #555;
+color: white;
+text-shadow: 1px 1px 1px black;
+text-transform: uppercase;
+font-size: .9em;
+}
+
+.nav a {
+color: white;
+text-decoration: none;
+padding: 5px;
+border: 1px solid #555;
+border-radius: 5px;
+}
+
+.nav a:hover {
+border-color: white
+background: black;
+}
+
+.nav ul {
+padding-left: 15px;
+float: left;
+}
+
+.nav li {
+float: none;
+display: inline;
+padding-right: 5px;
+}
+
+.social {
+position: absolute;
+right: 0;
+}
+
+.search {
+float: right;
+margin: 1em 10px 1em 0;
+}
+
+.search form {
+margin-top: -2px;
+}
+
+.search form input {
+border: 0;
+border-radius: 20px;
+text-indent: 5px;
+color: #555;
+width: 130px;
+}
+
+.social {
+margin: 0 32px 0 0;
+border-left: 1px solid #CCC;
+padding-top: 8px;
+height: 100%;
+}
+
+.social li {
+margin: 6px;
+}
+
+.sprite {
+/*background: url(http://www.nextdaypc.com/main/GUI/images/icon_facebook.png) no-repeat;*/
+background: url(sprite.gif) no-repeat;
+display: block;
+height: 32px;
+width: 33px;
+opacity: .5;
+}
+
+.sprite:hover {
+opacity: 1;
+}
+
+/*
+.sprite.facebook {
+background-position: -10px -10px;
+}
+
+.sprite.tumblr {
+background-position: -58px -10px;
+}
+
+.sprite.twitter {
+background-position: -108px -10px;
+}
+
+.sprite.aim {
+background-position: -158px -10px;
+}
+
+*/
+
+
+
+.sprite.facebook {
+background-position: -10px -60px;
+}
+
+.sprite.tumblr {
+background-position: -58px -60px;
+}
+
+.sprite.twitter {
+background-position: -108px -60px;
+}
+
+.sprite.aim {
+background-position: -158px -60px;
+}
+
+
+
+.body li {
+background: url(thumbs.gif) 0 0;
+float: left;
+margin: 10px;
+height: 50px;
+width: 50px;
+}
+
+.body li * {
+display: none;
+}
+
+.body li.thumb1 { background-position: 0px 0px; }
+.body li.thumb2 { background-position: 0px -50px; }
+.body li.thumb3 { background-position: 0px -100px; }
+
+.body li.thumb4 { 
+background-position: 0px -150px; 
+position: relative;
+top: 10px;
+}
+
+.body li.thumb5 { background-position: 0px -200px; }
+.body li.thumb6 { background-position: 0px -250px; }
+.body li.thumb7 { background-position: 0px -300px; }
+
+.body li.thumb1:hover { background-position: -150px 0px; }
+.body li.thumb2:hover { background-position: -150px -50px; }
+.body li.thumb3:hover { background-position: -150px -100px; }
+.body li.thumb4:hover { background-position: -150px -150px; }
+.body li.thumb5:hover { background-position: -150px -200px; }
+.body li.thumb6:hover { background-position: -150px -250px; }
+.body li.thumb7:hover { background-position: -150px -300px; }
+
+.body ul li a {
+width: 50px;
+height: 50px;
+overflow: hidden;
+color: white;
+text-decoration: none;
+font-size: 10px;
+}
+
+.body li {
+-webkit-transition: bottom .5s, background-position 2s;
+}
+
+.body li:hover {
+position: relative;
+}
+
+.body li:hover * {
+display: block;
+}
