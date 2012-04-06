@@ -3,7 +3,7 @@
 <!--
   Google HTML5 slide template
 
-  Authors: Luke Mahé (code)
+  Authors: Luke MahÃ© (code)
            Marcin Wichary (code and design)
            
            Dominic Mazzoni (browser compatibility)
@@ -15,356 +15,280 @@
 <html>
   <head>
     <title>Presentation</title>
-
     <meta charset='utf-8'>
-    <script
-      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--<script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>-->
+		<script src='../../js/slideshow.js'></script>
+		<link rel="stylesheet" href="../../css/Hattab.css" />
+		<link rel="stylesheet" href="main.css" />
+		<script type="text/javascript" src="http://use.typekit.com/uwy0krm.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  
-  <style>
-    /* Your individual styles here, or just use inline styles if that’s
-       what you want. */
-    
-    
-  </style>
+	<body>
+		<div id="main" class='slides layout-regular template-default'>
+			<section class='current smalllogo' style="background-position: top center">
+				<p class="center" style="position:relative; top: 400px;font-size: 70%;">Use the <span class="key">&uarr;</span>, <span class="key">&rarr;</span>, <span class="key">&darr;</span>, <span class="key">&larr;</span> keys.</p>
+			</section>
+			
+			<section class="future">
+				<h1>
+					Intermediate JavaScript
+				</h1>
+				<p class="center">
+					DHTML, Ajax, &amp; JSON
+				</p>
+			</section>
 
-  <body style='display: none'>
+			<section class="future">
+				<section>
+					<h3>
+						Reading Recap
+					</h3>
+					<p>
+					<img src="recap1.jpg" alt="The Semantic Grid System: Page Layout For Tomorrow" style="float: right;margin: 0 0 10px 10px;width: 240px;box-shadow: 0 8px 28px #333;" />
+						<em style="font-size: 29px;line-height: 1.3em;">
+							The Semantic Grid System: Page Layout For Tomorrow
+						</em>
+						<br>
+						<br>
+						<strong>
+							Main points:
+						</strong>
+						<br>
+						<span style="font-size: 15px; display: block; line-height: 25px;">
+							No clearing divs, fluid layouts, CSS Less, 
+						</span>
+					</p>
+					<p style="margin-top: 40px;clear: both;float: left;text-align: center;width: 100%;">
+						<a href="http://coding.smashingmagazine.com/2011/08/23/the-semantic-grid-system-page-layout-for-tomorrow/">
+							http://coding.smashingmagazine.com/2011/08/23/the-semantic-grid-system-page-layout-for-tomorrow/
+						</a>
+					</p>
+				</section>
+				
+				<section>
+					<h3>
+						Reading Recap
+					</h3>
+					<p>
+					<img src="recap2.jpg" alt="5 Popular CSS Frameworks + Tutorials &amp; Tools for Getting Started" style="float: right;margin: 0 0 10px 10px;width: 240px;box-shadow: 0 8px 28px #333;" />
+						<em style="font-size: 29px;line-height: 1.3em;">
+							5 Popular CSS Frameworks + Tutorials &amp; Tools for Getting Started
+						</em>
+						<br>
+						<br>
+						<strong>
+							Main points:
+						</strong>
+						<br>
+						<span style="font-size: 15px; display: block; line-height: 25px;">
+							
+						</span>
+					</p>
+					<p style="margin-top: 40px;clear: both;float: left;text-align: center;width: 100%;">
+						<a href="http://www.noupe.com/css/5-popular-css-frameworks-tutorials-tools-for-getting-started.html">
+							http://www.noupe.com/css/5-popular-css-frameworks-tutorials-tools-for-getting-started.html
+						</a>
+					</p>
+				</section>
+			</section>
+			
+			<section>
+				<h3>
+					Questions?
+				</h3>
+				<ul>
+					<li>
+						Which is more helpful: having reading assignments related to the next lecture topic or the past?
+					</li>
+				</ul>
+			</section>
 
-    <section class='slides layout-regular template-default'>
-      
-      <!-- Your slides (<article>s) go here. Delete or comment out the
-           slides below. -->
-        
-        
-      
-      <article class='biglogo'>
-      </article>
+			<section>
+				<section>
+					<h3>
+						What is DHTML?
+					</h3>
+					<ul>
+						<li>Augmenting the DOM with JavaScript.</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>
+						Changing CSS values
+					</h3>
+					<ul>
+						<li>jQuery's CSS class API</li>
+						<li>.hasClass(), .addClass(), .removeClass(), .toggleClass()</li>
+						<li>...combined with CSS3 transitions</li>
+					</ul>
+				</section>
 
-      <article>
-        <h1>
-          Title Goes Here Up
-          <br>
-          To Two Lines
-        </h1>
-        <p>
-          Sergey Brin
-          <br>
-          May 10, 2011
-        </p>
-      </article>
-      
-      <article>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath.
-        </p>
-      </article>
+				<section>
+					<h3>CSS3 Flyout Nav</h3>
+					<style>
+						#flyoutnav {
 
-      <article>
-        <h3>
-          Simple slide with header and text
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
+						}
 
-      <article class='smaller'>
-        <h3>
-          Simple slide with header and text (small font)
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
+						#flyoutnav ul {
+							list-style: none;
+							-webkit-transition: all 0.2s;
+						}
 
-      <article>
-        <h3>
-          Slide with bullet points and a longer title, just because we
-          can make it longer
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          </li>
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          </li>
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          </li>
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-          </li>
-        </ul>
-      </article>
+						#flyoutnav ul:hover {
 
-      <article>
-        <h3>
-          Slide with bullet points that builds
-        </h3>
-        <ul class="build">
-          <li>
-            This is an example of a list
-          </li>
-          <li>
-            The list items fade in
-          </li>
-          <li>
-            Last one!
-          </li>
-        </ul>
+						}
 
-        <div class="build">
-          <p>Any element with child nodes can build.</p>
-          <p>It doesn't have to be a list.</p>
-        </div>
-      </article>
+						#flyoutnav ul li {
+							background: red;
+							-webkit-transition: all 0.2s;
+							width: 0px;
+							white-space: nowrap;
+							overflow: hidden;
+							text-align: right;
+							text-indent: -211px;
+							padding-right: 30px;
+						}
 
-      <article class='smaller'>
-        <h3>
-          Slide with bullet points (small font)
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-        </ul>
-      </article>
+						#flyoutnav ul li:hover,
+						#flyoutnav ul li.active {
+							width: 300px;
+							text-indent: 0;
+							cursor: pointer;
+						}
+					</style>
+					<script>
+						$(function(){
+							$('#flyoutnav li').click(function (e) {
+								$('#flyoutnav li').removeClass('active');
+								$(this).addClass('active');
+							});
+						});
+					</script>
+					<div id="flyoutnav">
+						<ul>
+							<li>Item One</li>
+							<li>Item Two</li>
+							<li>Item Three</li>
+							<li>Item Four</li>
+							<li>Item Five</li>
+							<li>Item Six</li>
+						</ul>
+					</div>
+				</section>
+				
+				<section style="text-align: center">
+					<img src="modal.jpg" alt="modal" style="border: 0; background: transparent; -webkit-box-shadow: 0 0 0 0; width: 100%; position: relative; top: -90px" />
+				</section>
 
-      <article>
-        <h3>
-          Slide with a table
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          Slide with a table (smaller text)
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article>
-        <h3>
-          Styles
-        </h3>
-        <ul>
-          <li>
-            <span class='red'>class="red"</span>
-          <li>
-            <span class='blue'>class="blue"</span>
-          <li>
-            <span class='green'>class="green"</span>
-          <li>
-            <span class='yellow'>class="yellow"</span>
-          <li>
-            <span class='black'>class="black"</span>
-          <li>
-            <span class='white'>class="white"</span>
-          <li>
-            <b>bold</b> and <i>italic</i>
-        </ul>
-      </article>
-      
-      <article>
-        <h2>
-          Segue slide
-        </h2>
-      </article>
+				<section>
+					<p style="text-align: center">
+						<img src="jquery_ui.png" alt="jQuery UI" style="width: 300px; border: 0; -webkit-box-shadow: 0 0 0 0; background: transparent" />
+						<br /><br />
+						Premade DHTML &amp; UI components like:<br />
+						<a href="http://jqueryui.com/demos/draggable/">Drag &amp; Drop</a>, <a href="http://jqueryui.com/demos/accordion/">Accordions</a>, <a href="http://jqueryui.com/demos/tabs/">Tabs</a>, &amp; <a href="http://jqueryui.com/demos/slider/">Sliders</a>
+					</p>
+				</section>
+			</section>
+				
+			<section>
+				<section>
+					<h3>
+						What is Ajax?
+					</h3>
+					<ul style="list-style: none;padding: 0;text-align: center;">
+						<li>Retrieving data without refreshing the page.</li>
+					</ul>
+					<p style="text-align: center">
+						<img src="ajax.gif" style="border: 0;-webkit-box-shadow: 0 0 0 0;background: transparent; width:auto;position: relative;top: -30px" />
+					</p>
+				</section>
 
-      <article>
-        <h3>
-          Slide with an image
-        </h3>
-        <p>
-          <img style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Sergey Brin
-        </div>
-      </article>
+				<section>
+					<style>
+						#ajaxcontainer {
+							font-size: .8em;
+						}
 
-      <article>
-        <h3>
-          Slide with an image (centered)
-        </h3>
-        <p>
-          <img class='centered' style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Larry Page
-        </div>
-      </article>
+						#ajaxcontainer div {
+							border: 1px solid #555;
+							background: white;
+							text-align: center;
+						}
 
-      <article class='fill'>
-        <h3>
-          Image filling the slide (with optional header)
-        </h3>
-        <p>
-          <img src='images/example-cat.jpg'>
-        </p>
-        <div class='source white'>
-          Source: Eric Schmidt
-        </div>
-      </article>
+						#ajaxcontainer p {
+							
+						}
+					</style>
+					<script>
+						var runscript = function () {
+							$.getJSON(
+							'test.json',
+							function(data){
+								$('#test').html(data.value);
+							});
+						};
+					</script>
+					<h3>
+						How does Ajax work?
+					</h3>
+					<div id="ajaxcontainer">
+						<div id="jsoncontainer">
+							<p>
+								Step 1.) 
+								<a href="test.json">
+									test.json
+								</a>
+							</p>
+							<pre>{ "value" : "hey class" }</pre>
+						</div>
+						<div id="jscontainer">
+							<p>
+							Step 2.)
+								<a href="#" onclick="javascript:runscript();return false;">
+									run script
+								</a>
+							</p>
+							<pre>$.getJSON(
+  'test.json',
+  function(data){
+    $('#test').html(data.value);
+});</pre>
+						</div>
+						<div id="htmlcontainer">
+							<p>
+								Step 3.) inject data into DOM
+							</p>
+							<div id="test" style="border: 1px dotted #555; margin: 10px;">this text will get replaced</div>
+						</div>
+					</div>
+				</section>
+			</section>
 
-      <article>
-        <h3>
-          This slide has some code
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          This slide has some code (small font)
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article>
-        <q>
-          The best way to predict the future is to invent it.
-        </q>
-        <div class='author'>
-          Alan Kay
-        </div>
-      </article>
-      
-      <article class='smaller'>
-        <q>
-          A distributed system is one in which the failure of a computer 
-          you didn’t even know existed can render your own computer unusable.
-        </q>
-        <div class='author'>
-          Leslie Lamport
-        </div>
-      </article>
-      
-      <article class='nobackground'>
-        <h3>
-          A slide with an embed + title
-        </h3>
-        
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
-
-      <article class='nobackground'>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
-
-      <article class='fill'>
-        <h3>
-          Full-slide embed with (optional) slide title on top
-        </h3>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
-      
-      <article>
-        <h3>
-          Thank you!
-        </h3>
-        
-        <ul>
-          <li>
-            <a href='http://www.google.com'>google.com</a>
-        </ul>
-      </article>
-
-    </section>
-
-  </body>
+			<section>
+				<section>
+					<h2>
+						Questions
+					</h2>
+					<h1>?</h1>
+				</section>
+				
+				<section>
+					<h3>
+						Assignment
+					</h3>
+					<p class="center">
+						Continue applying HTML, CSS, JavaScript to your designs.
+					</p>
+					<ol>
+						<li>Create a new folder in your webspace titled "20120330"</li>
+						<li>Copy the contents from your previous assignment's folder into here and continue working on your new designs from here.</li>
+					</ol>
+				</section>
+				
+			</section>
+		</div>
+	</body>
 </html>
