@@ -3,7 +3,7 @@
 <!--
   Google HTML5 slide template
 
-  Authors: Luke Mahé (code)
+  Authors: Luke MahÃ© (code)
            Marcin Wichary (code and design)
            
            Dominic Mazzoni (browser compatibility)
@@ -15,356 +15,180 @@
 <html>
   <head>
     <title>Presentation</title>
-
     <meta charset='utf-8'>
-    <script
-      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--<script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>-->
+		<script src='../../js/slideshow.js'></script>
+		<link rel="stylesheet" href="../../css/Hattab.css" />
+		<link rel="stylesheet" href="main.css" />
+		<script type="text/javascript" src="http://use.typekit.com/uwy0krm.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  
-  <style>
-    /* Your individual styles here, or just use inline styles if that’s
-       what you want. */
-    
-    
-  </style>
+	<body>
+		<div id="main" class='slides layout-regular template-default'>
+			<section class='current smalllogo' style="background-position: top center">
+				<p class="center" style="position:relative; top: 400px;font-size: 70%;">Use the <span class="key">&uarr;</span>, <span class="key">&rarr;</span>, <span class="key">&darr;</span>, <span class="key">&larr;</span> keys.</p>
+			</section>
+			
+			<section class="future">
+				<h1>
+					Responsive <span style="font-size:.9em">Web Design</span>
+				</h1>
+				<p class="center">
+					Media Queries, Fluid Layouts and graphics
+				</p>
+			</section>
 
-  <body style='display: none'>
+			<section>
+				<section>
+					<h3>What does "Responsive Web Design" mean?</h3>
+					<ul>
+						<li>Designing for multiple device resolutions (computer screens, phones, tablets, tvs, etc.)</li>
+					</ul>
+					<img src="readability.png" alt="readability" style="border: 0;-webkit-box-shadow: 0 0 0 0;background: transparent;" />
+				</section>
 
-    <section class='slides layout-regular template-default'>
-      
-      <!-- Your slides (<article>s) go here. Delete or comment out the
-           slides below. -->
-        
-        
-      
-      <article class='biglogo'>
-      </article>
+				<section>
+					<h3>The technique:</h3>
+					<ol>
+						<li>Detect device resolution with <a href="https://www.google.com/search?sourceid=chrome&ie=UTF-8&q=css3+media+queries">CSS3 Media Queries</a><br><br></li>
+						<li>Write <a href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/">resolution specific</a> CSS<br><br></li>
+						<li>Use <a href="http://www.alistapart.com/articles/fluidgrids/">fluid grids</a> and <a href="http://unstoppablerobotninja.com/entry/fluid-images">images</a> for all other resolutions<br><br></li>
+					</ol>
+				</section>
 
-      <article>
-        <h1>
-          Title Goes Here Up
-          <br>
-          To Two Lines
-        </h1>
-        <p>
-          Sergey Brin
-          <br>
-          May 10, 2011
-        </p>
-      </article>
-      
-      <article>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath.
-        </p>
-      </article>
-
-      <article>
-        <h3>
-          Simple slide with header and text
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
-
-      <article class='smaller'>
-        <h3>
-          Simple slide with header and text (small font)
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
-
-      <article>
-        <h3>
-          Slide with bullet points and a longer title, just because we
-          can make it longer
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          </li>
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          </li>
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          </li>
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-          </li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>
-          Slide with bullet points that builds
-        </h3>
-        <ul class="build">
-          <li>
-            This is an example of a list
-          </li>
-          <li>
-            The list items fade in
-          </li>
-          <li>
-            Last one!
-          </li>
-        </ul>
-
-        <div class="build">
-          <p>Any element with child nodes can build.</p>
-          <p>It doesn't have to be a list.</p>
-        </div>
-      </article>
-
-      <article class='smaller'>
-        <h3>
-          Slide with bullet points (small font)
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-        </ul>
-      </article>
-
-      <article>
-        <h3>
-          Slide with a table
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          Slide with a table (smaller text)
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article>
-        <h3>
-          Styles
-        </h3>
-        <ul>
-          <li>
-            <span class='red'>class="red"</span>
-          <li>
-            <span class='blue'>class="blue"</span>
-          <li>
-            <span class='green'>class="green"</span>
-          <li>
-            <span class='yellow'>class="yellow"</span>
-          <li>
-            <span class='black'>class="black"</span>
-          <li>
-            <span class='white'>class="white"</span>
-          <li>
-            <b>bold</b> and <i>italic</i>
-        </ul>
-      </article>
-      
-      <article>
-        <h2>
-          Segue slide
-        </h2>
-      </article>
-
-      <article>
-        <h3>
-          Slide with an image
-        </h3>
-        <p>
-          <img style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Sergey Brin
-        </div>
-      </article>
-
-      <article>
-        <h3>
-          Slide with an image (centered)
-        </h3>
-        <p>
-          <img class='centered' style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Larry Page
-        </div>
-      </article>
-
-      <article class='fill'>
-        <h3>
-          Image filling the slide (with optional header)
-        </h3>
-        <p>
-          <img src='images/example-cat.jpg'>
-        </p>
-        <div class='source white'>
-          Source: Eric Schmidt
-        </div>
-      </article>
-
-      <article>
-        <h3>
-          This slide has some code
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
+				<section>
+					<h3>Media Query example</h3>
+					<p>This CSS rule only applies to small screens</p>
+					<pre>@media screen and (max-width: 600px) {
+  .class {
+    background: #ccc;
   }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          This slide has some code (small font)
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article>
-        <q>
-          The best way to predict the future is to invent it.
-        </q>
-        <div class='author'>
-          Alan Kay
-        </div>
-      </article>
-      
-      <article class='smaller'>
-        <q>
-          A distributed system is one in which the failure of a computer 
-          you didn’t even know existed can render your own computer unusable.
-        </q>
-        <div class='author'>
-          Leslie Lamport
-        </div>
-      </article>
-      
-      <article class='nobackground'>
-        <h3>
-          A slide with an embed + title
-        </h3>
-        
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
+}</pre>
+					<p>This manages viewport zoom on WebKit browsers</p>
+					<pre>&lt;meta name="viewport" content="width=960px; user-scalable=1;"&gt;</pre>
+					<ul>
+						<li><a href="http://www.w3.org/TR/css3-mediaqueries/">W3C Spec</a></li>
+						<li><a href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/">Media Queries for Standard Devices</a></li>
+					</ul>
+				</section>
 
-      <article class='nobackground'>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
+				<style>
+					.ethanMarcotte p {
+						text-align: center;
+					}
+					.ethanMarcotte p img {
+						width: auto;
+						border: 0;
+						-webkit-box-shadow: 0 0 0 0;
+						background: transparent;
+					}
+				</style>
+				<section class="ethanMarcotte">
+					<h3>Ethan Marcotte</h3>
+					<ul>
+						<li>Coined the phrase in the ALA article: "<a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive Web Design</a>"</li>
+						<li>Author, speaker, designer</li>
+					</ul>
+					<p>
+						<img src="ethan-marcotte-books.png" alt="Ethan Marcotte Books" />
+						<img src="ethan-marcotte.png" alt="Ethan Marcotte" style="position: relative;top: -60px;margin-left: 50px;" />
+					</p>
+				</section>
+			</section>
 
-      <article class='fill'>
-        <h3>
-          Full-slide embed with (optional) slide title on top
-        </h3>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
-      
-      <article>
-        <h3>
-          Thank you!
-        </h3>
-        
-        <ul>
-          <li>
-            <a href='http://www.google.com'>google.com</a>
-        </ul>
-      </article>
+			<section>
+				<section>
+					<h3>Examples:</h3>
+					<ul>
+						<li><a href="http://mediaqueri.es/">mediaqueri.es</a></li>
+						<li><a href="http://css-tricks.com/">CSS-tricks</a></li>
+						<li><a href="http://thenextweb.com/dd/2012/02/01/10-beautiful-examples-of-responsive-web-design/">10 Beautiful examples of responsive Web design</a></li>
+					</ul>
+				</section>
+				
+				<section style="text-align: center">
+					<img src="responsive-web-design.jpg" alt="modal" style="border: 0; background: transparent; -webkit-box-shadow: 0 0 0 0; width: 100%; position: relative; top: -90px" />
+				</section>
 
-    </section>
+				<section>
+					<h3>Non-examples of responsive design:</h3>
+					<p>Using browser detection to serve a completely different code base.</p>
+					<ul>
+						<li><a href="http://www.twitter.com/">Twitter</a></li>
+						<li><a href="http://www.facebook.com/">Facebook</a></li>
+						<li><a href="http://www.gmail.com/">Gmail</a></li>
+						<li><a href="http://www.linkedin.com/">LinkedIn</a></li>
+					</ul>
+				</section>
+				
+				<section style="text-align: center">
+					<img src="not-responsive-web-design.jpg" alt="modal" style="border: 0; background: transparent; -webkit-box-shadow: 0 0 0 0; width: 100%; position: relative; top: -90px" />
+				</section>
+			</section>
+				
+			<section>
+				<style>
+				.prosAndCons ul {
+					width: 50%;
+					float: left;
+					margin: 0;
+					padding: 0;
+					list-style: none;
+				}
+				.prosAndCons ul.right {
+					float: right;
+				}
+				</style>
+				<section class="prosAndCons">
+					<h3 style="margin-bottom:120px;">Pros &amp; Cons</h3>
+					<ul>
+						<h4 style="color: #339b00;text-align: left;">Pros:</h4>
+						<li>Great UX potential</li>
+						<li>One code base</li>
+						<li>Future-proof</li>
+					</ul>
+					<ul class="right">
+						<h4 style="color: #b10000;text-align: left;">Cons:</h4>
+						<li>Difficult on complex sites</li>
+						<li>Multiple design iterations</li>
+						<li>CSS can become complex</li>
+					</ul>
+				</section>
 
-  </body>
+				<section>
+					<h3>Responsive Design vs. Web App vs. Native App?</h3>
+					<ul>
+						<li>Responsive = unified code base</li>
+						<li>Web App = more robust</li>
+						<li>Native = more performant</li>
+					</ul>
+					<ul>
+						<li>Based on business needs</li>
+						<li>More design, dev, and testing = $$$</li>
+					</ul>
+				</section>
+			</section>
+
+			<section style="text-align: center">
+				<h3 style="position: relative;top: -100px;">Reading</h3>
+				<img src="reading.png" alt="reading" style="border: 0; background: transparent; -webkit-box-shadow: 0 0 0 0; width: 100%; position: relative; top: -90px" />
+			</section>
+
+			<section>
+				<h3>
+					Assignment
+				</h3>
+				<p class="center">
+					Begin applying responsive design techniques to your website.
+				</p>
+			</section>
+			<section>
+				<h2>
+					Questions
+				</h2>
+				<h1>?</h1>
+			</section>
+		</div>
+	</body>
 </html>
