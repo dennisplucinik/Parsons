@@ -3,7 +3,7 @@
 <!--
   Google HTML5 slide template
 
-  Authors: Luke MahÈ (code)
+  Authors: Luke Mah√© (code)
            Marcin Wichary (code and design)
            
            Dominic Mazzoni (browser compatibility)
@@ -15,356 +15,380 @@
 <html>
   <head>
     <title>Presentation</title>
-
     <meta charset='utf-8'>
-    <script
-      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--<script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>-->
+		<script src='../../js/slideshow.js'></script>
+		<link rel="stylesheet" href="../../css/Hattab.css" />
+		<link rel="stylesheet" href="main.css" />
+		<script type="text/javascript" src="http://use.typekit.com/uwy0krm.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  
-  <style>
-    /* Your individual styles here, or just use inline styles if thatís
-       what you want. */
-    
-    
-  </style>
+	<body>
+		<div id="main" class='slides layout-regular template-default'>
+			<section class='current smalllogo' style="background-position: top center">
+				<p class="center" style="position:relative; top: 400px;font-size: 70%;">Use the <span class="key">&uarr;</span>, <span class="key">&rarr;</span>, <span class="key">&darr;</span>, <span class="key">&larr;</span> keys.</p>
+			</section>
+			
+			<section class="future">
+				<h1>
+					Mobile Optimized <br /><span style="font-size:.9em">Websites</span>
+				</h1>
+				<p class="center">
+					Performance &amp; design, WebKit, &amp; touch gestures
+				</p>
+			</section>
 
-  <body style='display: none'>
+			<style>
+				.squares {
+					background: black;
+					opacity: .01;
+					position: absolute;
+					width: 327px;
+					height: 181px;
+					z-index: 1;
+					text-shadow: 0 0 0 !important;
+					color: white;
+					text-align: left;
+					padding: 10px;
+					-webkit-transition: all .2s;
+				}
 
-    <section class='slides layout-regular template-default'>
-      
-      <!-- Your slides (<article>s) go here. Delete or comment out the
-           slides below. -->
-        
-        
-      
-      <article class='biglogo'>
-      </article>
+				.squares h2 {
+					text-shadow: 0 0 0 !important;
+					color: white;
+				}
 
-      <article>
-        <h1>
-          Title Goes Here Up
-          <br>
-          To Two Lines
-        </h1>
-        <p>
-          Sergey Brin
-          <br>
-          May 10, 2011
-        </p>
-      </article>
-      
-      <article>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath.
-        </p>
-      </article>
+				.squares:hover {
+					top: 0;
+					left: 0;
+					width: 810px;
+					height: 539px;
+					opacity: .95;
+					border-radius: 10px;
+				}
 
-      <article>
-        <h3>
-          Simple slide with header and text
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
+				.alistapart {top: 35px;left: 35px;}
+				.neilsen {top: 35px;left: 425px;}
+				.smashing {top: 296px;left: 35px;}
+				.vitamin {top: 296px;left: 425px;}
 
-      <article class='smaller'>
-        <h3>
-          Simple slide with header and text (small font)
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
+				.alistapart:hover {z-index:9;}
+				.neilsen:hover {z-index:9;}
+				.smashing:hover {z-index:9;}
+				.vitamin:hover {z-index:9;}
 
-      <article>
-        <h3>
-          Slide with bullet points and a longer title, just because we
-          can make it longer
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          </li>
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          </li>
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          </li>
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-          </li>
-        </ul>
-      </article>
+				.squares pre {
+					background: white;
+					word-wrap: normal;
+					white-space: pre;
+					overflow: hidden;
+					margin: 20px;
+					padding: 20px;
+				}
 
-      <article>
-        <h3>
-          Slide with bullet points that builds
-        </h3>
-        <ul class="build">
-          <li>
-            This is an example of a list
-          </li>
-          <li>
-            The list items fade in
-          </li>
-          <li>
-            Last one!
-          </li>
-        </ul>
+				.squares quote {
+					text-align: center;
+					width: 100%;
+					display: block;
+					color: peru;
+					font-size: .8em;
+				}
 
-        <div class="build">
-          <p>Any element with child nodes can build.</p>
-          <p>It doesn't have to be a list.</p>
-        </div>
-      </article>
+				.squares quote span {
+					color: oldlace;
+				}
+			</style>
+			<section style="text-align: center">
+				<h3 style="position: relative;top: -100px;">Reading Recap</h3>
+				<div class="squares alistapart">
+					<h2>Embrace Fluid Layouts</h2>
+					<pre>.figure {
+  float: left;
+  margin: 0 3.317535545023696682% 1.5em 0;   /* 21px / 633px */
+  width: 31.121642969984202211%;             /* 197px / 633px */
+}</pre>
+<quote>"Responsive web design offers us a way forward" <br /><span> - Ethan Marcotte</span><br /><a href="http://www.alistapart.com/articles/responsive-web-design/">[article link]</a></quote>
+				</div>
+				<div class="squares neilsen">
+					<h2>Mobile Sites are the Future, but...</h2>
+					<pre style="word-wrap:break-word;white-space:normal;">Today, if you are serious about creating the best possible mobile user experience, my advice is to develop apps.</pre>
+					<quote>"...mobile sites will win over mobile apps in the long term ... when? ... Sadly, I don't know" <br /><span> - Jakob Nielsen</span><br /><a href="http://www.useit.com/alertbox/mobile-sites-apps.html">[article link]</a></quote>
+				</div>
+				<div class="squares smashing">
+					<h2>‚ÄúYear of the Mobile Web‚Äù (c.2011)</h2>
+					<pre>- DESIGN FOR SMALLER SCREEN SIZES
+- SIMPLIFY NAVIGATION
+- PRIORITIZE CONTENT
+- MINIMIZE USER INPUT
+- INTERMITTENT CONNECTIVITY
+- ETC.</pre>
+					<quote>"As [mobile usage] evolves, so does the mobile user experience"<br /><a href="http://www.smashingmagazine.com/2011/05/02/a-user-centered-approach-to-mobile-design/">[article link]</a></quote>
+				</div>
+				<div class="squares vitamin">
+					<h2>Beginner‚Äôs Guide to Responsive Web Design</h2>
+					<pre>- FLUID GRIDS
+- MEDIA QUERIES</pre>
+					<quote>Instead of asking "What is responsive web design?", ask "What problem does responsive web design solve?"<br /><a href="http://thinkvitamin.com/design/beginners-guide-to-responsive-web-design/">[article link]</a></quote>
+				</div>
+				<img src="reading.png" alt="reading" style="border: 0; background: transparent; -webkit-box-shadow: 0 0 0 0; width: 100%; position: relative; top: -90px" />
+			</section>
 
-      <article class='smaller'>
-        <h3>
-          Slide with bullet points (small font)
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          <li>
-            At all times strive to maintain Google's corporate look and feel
-        </ul>
-      </article>
+			<section>
+				<style>
+					.performance li span {
+						color: #777;
+					}
+				</style>
+				<section class="performance">
+					<h3>Performance Checklist</h3>
+					<ul>
+						<li>
+							Network Speed Problems:
+							<ul>
+								<li>
+									Reduce HTTP requests
+									<ul>
+										<li>
+											image sprites
+										</li>
+										<li>
+											concatenate CSS &amp; JavaScript
+										</li>
+									</ul>
+								</li>
+								<li>
+									Serve device specific content
+									<ul>
+										<li>
+											smaller images on smaller screens
+										</li>
+										<li>
+											<a href="http://bradfrostweb.com/blog/mobile/hi-res-optimization/">
+												optimize for high resolution displays
+											</a>
+										</li>
+										<li>
+											check connection speed 
+											<a href="http://davidbcalhoun.com/2010/using-navigator-connection-android">
+												[link]
+											</a>
+										</li>
+									</ul>
+							</ul>
+						</li>
+						<li>
+							Device Limitation Problems:
+							<ul>
+								<li>
+									Fallback CSS3 transitions to jQuery animations
+								</li>
+								<li>
+									Every performance issue gets amplified
+								</li>
+							</ul>
+					</ul>
+				</section>
 
-      <article>
-        <h3>
-          Slide with a table
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke MahÈ
-            <td>
-              V.P. of Keepiní It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          Slide with a table (smaller text)
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke MahÈ
-            <td>
-              V.P. of Keepiní It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article>
-        <h3>
-          Styles
-        </h3>
-        <ul>
-          <li>
-            <span class='red'>class="red"</span>
-          <li>
-            <span class='blue'>class="blue"</span>
-          <li>
-            <span class='green'>class="green"</span>
-          <li>
-            <span class='yellow'>class="yellow"</span>
-          <li>
-            <span class='black'>class="black"</span>
-          <li>
-            <span class='white'>class="white"</span>
-          <li>
-            <b>bold</b> and <i>italic</i>
-        </ul>
-      </article>
-      
-      <article>
-        <h2>
-          Segue slide
-        </h2>
-      </article>
+				<section>
+					<h3>Design Tips</h3>
+					<ul>
+						<li>
+							Follow the <a href="http://www.mobilexweb.com/blog/ui-guidelines-mobile-tablet-design">
+								HIG
+							</a>
+						</li>
+						<li>
+							Don't use hover states
+							<a href="http://www.unwiredview.com/2011/01/13/apple-is-looking-to-improve-multi-touch-with-hover-sensing-on-iphones-and-ipads/">
+								...or maybe do
+							</a>
+						</li>
+						<li>
+							Don't use Flash
+						</li>
+						<li>
+							Simplify copy
+						</li>
+						<li>
+							Simplify forms
+						</li>
+						<li>
+							Use familiar UX conventions (e.g., vertical scrolling, )
+						</li>
+						<li>
+							Use mobile interface JavaScript libraries, such as...
+						</li>
+					</ul>
+				</section>
 
-      <article>
-        <h3>
-          Slide with an image
-        </h3>
-        <p>
-          <img style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Sergey Brin
-        </div>
-      </article>
+				<style>
+					.libraries ul {
+						list-style: none;
+					}
 
-      <article>
-        <h3>
-          Slide with an image (centered)
-        </h3>
-        <p>
-          <img class='centered' style='height: 500px' src='images/example-graph.png'>
-        </p>
-        <div class='source'>
-          Source: Larry Page
-        </div>
-      </article>
+					.libraries ul li {
+						text-align: left;
+					}
 
-      <article class='fill'>
-        <h3>
-          Image filling the slide (with optional header)
-        </h3>
-        <p>
-          <img src='images/example-cat.jpg'>
-        </p>
-        <div class='source white'>
-          Source: Eric Schmidt
-        </div>
-      </article>
+					.libraries ul li a {
+						text-decoration: none;
+					}
 
-      <article>
-        <h3>
-          This slide has some code
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
+					.libraries ul li img {
+						border: 5px solid black;
+						border-radius: 10px;
+						background: black;
+						padding: 5px 10px;
+						width: auto;
+						box-shadow: 0 0 0;
+					}
+				</style>
+				<section class="libraries">
+				<h3>Mobile interface libraries</h3>
+					<ul>
+						<li>
+							<a href="http://dojotoolkit.org/features/mobile">
+								<img src="logo-dojo.png" alt="Dojo Toolkit Mobile" />
+								Dojo Toolkit Mobile
+							</a>
+						</li>
+						<li>
+							<a href="http://www.sencha.com/products/touch">
+								<img src="logo-sencha.png" alt="Sencha Touch 2" />
+								Sencha Touch
+							</a>
+						</li>
+						<li>
+							<a href="http://jquerymobile.com/">
+								<img src="logo-jqmobile.png" alt="jQuery Mobile Framework" />
+								jQuery Mobile
+							</a>
+						</li>
+						<li>
+							<a href="http://www.jqtouch.com/">
+								<img src="logo-jqtouch.png" alt="jQTouch - jQuery Plugin" />
+								jQTouch (jQuery plugin)
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>More Resources</h3>
+					<ul>
+						<li>
+							<a href="http://yslow.org/">
+								YSlow (Chrome or Firefox plugin)
+							</a>
+						</li>
+						<li>
+							<a href="http://validator.w3.org/mobile/">
+								http://validator.w3.org/mobile/
+							</a> (this kind of sucks)
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>CSS3 &rarr; jQuery Fallback</h3>
+					<pre style="font-size: .6em">/* -------CSS:------- */
+#element{
+  left: 0px;
+  transition: all 1s;
+}
+
+#element:hover {
+  left: 100px;
+}
+
+
+/* -------JavaScript:------- */
+if(!Modernizr.csstransitions){
+  $('#element').hover(
+    function(){ $(this).animate({left:'100px'}), // over
+    function(){ $(this).animate({left:'0px'}) // out
+  });
+}</pre>
+				</section>
+
+				<section>
+					<h3>Touch &rarr; Click Fallback</h3>
+					<pre style="font-size: .6em">&lt;a id="addTodo" href="#add"&gt;add todo list item&lt;/a&gt;
+
+$('#addTodo').on('click touchstart', function(e){
+  e.preventDefault();
+  addItem();
+});
 </pre>
-        </section>
-      </article>
-      
-      <article class='smaller'>
-        <h3>
-          This slide has some code (small font)
-        </h3>
-        <section>
-        <pre>
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: 'umber' }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article>
-        <q>
-          The best way to predict the future is to invent it.
-        </q>
-        <div class='author'>
-          Alan Kay
-        </div>
-      </article>
-      
-      <article class='smaller'>
-        <q>
-          A distributed system is one in which the failure of a computer 
-          you didnít even know existed can render your own computer unusable.
-        </q>
-        <div class='author'>
-          Leslie Lamport
-        </div>
-      </article>
-      
-      <article class='nobackground'>
-        <h3>
-          A slide with an embed + title
-        </h3>
-        
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
+					<br />
+					<a href="http://developer.apple.com/library/ios/#DOCUMENTATION/AppleApplications/Reference/SafariWebContent/HandlingEvents/HandlingEvents.html">
+						Apple's documentation on WebKit touch events
+					</a>
+				</section>
 
-      <article class='nobackground'>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
+				<section>
+					<h3>Other WebKit bugs/limitations/features</h3>
+					<ul>
+						<li>
+							<a href="http://duncandavidson.com/blog/2012/03/webkit_retina_bug">
+								Large image downsampling on Retina displays
+							</a>
+							<a href="http://dl.dropbox.com/u/2113200/Test/ipad_frank.html">[iPad link]</a>
+						</li>
+						<li>
+							Quirky touch event behavior when combined with other JavaScript window modifications.
+						</li>
+						<li>
+							No scroll events until 'touchstop'. (Use position: fixed if possible)
+						</li>
+						<li>
+							Leverage 
+							<a href="http://www.sencha.com/blog/understanding-hardware-acceleration-on-mobile-browsers/">
+								graphical hardware acceleration
+							</a>
+						</li>
+				</section>
+			</section>
 
-      <article class='fill'>
-        <h3>
-          Full-slide embed with (optional) slide title on top
-        </h3>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-      </article>
-      
-      <article>
-        <h3>
-          Thank you!
-        </h3>
-        
-        <ul>
-          <li>
-            <a href='http://www.google.com'>google.com</a>
-        </ul>
-      </article>
+			<section>
+				<h3>Week 13 Reading</h3>
+				<ul>
+					<li>
+						<a href="http://calendar.perfplanet.com/2010/high-performance-mobile/">
+							High-Performance Mobile
+						</a>
+					</li>
+					<li>
+						<a href="http://whitneyhess.com/blog/2011/04/23/youre-not-a-user-experience-designer-if/comment-page-17/#comment-8298">
+							You‚Äôre not a user experience designer if‚Ä¶
+						</a>
+					</li>
+					<li>
+						<a href="http://css-tricks.com/on-responsive-images/">
+							On Responsive Images
+						</a>
+					</li>
+				</ul>
+			</section>
 
-    </section>
-
-  </body>
+			<section>
+				<h3>
+					Week 13 Assignment
+				</h3>
+				<p class="center">
+					Continue refining your websites applying new techniques learned from class.<br />
+					<a href="https://docs.google.com/document/d/1PrrFK_A_B91GwEtdsyAomM-1YWiCPrKa8jdpuzq4pqs/edit">[syllabus link]</a>
+				</p>
+			</section>
+			<section>
+				<h2>
+					Questions
+				</h2>
+				<h1>?</h1>
+			</section>
+		</div>
+	</body>
 </html>
